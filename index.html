@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal portfolio website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="1.png" alt="" class="logo">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">contect</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Jitendra Kumar</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/WhatsApp Image 2023-11-28 at 17.44.39.jpeg" alt="">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Jitendra Kumar is a driven B.Tech Computer Science student specializing in front-end development and API integration. With expertise in HTML, CSS, JavaScript, and Bootstrap, he has developed a dynamic weather application and a sleek portfolio demonstrating his skills. Additionally, he has practical experience in back-end technologies such as Node.js, SQL, and Vue.js, showcased through projects like a hospital management system. Jitendra's proficiency in algorithmic problem-solving, coupled with his solid grasp of programming languages and technical concepts, positions him as a capable and proactive individual ready to contribute effectively in a professional setting.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('Skills')"><b>Skills</b></p>
+                            <p class="tab-links" onclick="opentab('Technical knowledge')"><b>Technical knowledge</b></p>
+                            <p class="tab-links" onclick="opentab('Educations')"><b>Educations</b></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>desiging wb/app interfaces</li>
+                                <li><span>UI?UX</span><br>Designing web/App interfaces</li>
+                                <li><span>UI?UX</span><br>Desiging web/App interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Technical knowledge">
+                            <ul>
+                                <li><span>UI?UX</span><br>desiging wb/app interfaces</li>
+                                <li><span>UI?UX</span><br>Designing web/App interfaces</li>
+                                <li><span>UI?UX</span><br>Desiging web/App interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Educations">
+                            <ul>
+                                <li><span>UI?UX</span><br>desiging wb/app interfaces</li>
+                                <li><span>UI?UX</span><br>Designing web/App interfaces</li>
+                                <li><span>UI?UX</span><br>Desiging web/App interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services sections------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"></h1>
+            <div class="services-list">
+                
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontens = document.getElmentByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            ducument.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+</html>
